@@ -1,0 +1,49 @@
+<div class="limiter">
+  <div class="container-login100" style="background-image: url('images/img-01.jpg');">
+    <div class="wrap-login100 p-t-60 p-b-30">
+      <form class="login100-form validate-form" action="<%= sails.getUrlFor('HomeController.home') %>" method="POST">
+        <input type="hidden" name="_csrf" value="<%= _csrf %>" />
+        <div class="login100-form-avatar">
+          <img src="images/logo.png" alt="AVATAR">
+        </div>
+        <span class="login100-form-title p-t-20 p-b-45">
+          Đăng nhập
+          <% if(notify !== null) { %>
+          <div class="alert alert-success alert-dismissible" id="notify_1">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <%= notify%>
+          </div>
+          <% }%>
+        </span>
+
+        <div class="wrap-input100 validate-input m-b-10" data-validate="Username is required">
+          <input class="input100" type="email" name="email" placeholder="Nhập tên tài khoản" value="<%= req.cookies.username %>" required>
+          <span class="focus-input100"></span>
+          <span class="symbol-input100">
+            <i class="fa fa-user"></i>
+          </span>
+        </div>
+
+        <div class="wrap-input100 validate-input m-b-10" data-validate="Password is required">
+          <input class="input100" type="password" name="pwd" placeholder="Nhập mật khẩu" value="<%= req.cookies.password %>" required>
+          <span class="focus-input100"></span>
+          <span class="symbol-input100">
+            <i class="fa fa-lock"></i>
+          </span>
+        </div>
+        <div class="p-l-15">
+          <input id="ckb1" type="checkbox" name="remember">
+          <label for="ckb1">Nhớ mật khẩu</label>
+        </div>
+        <div class="container-login100-form-btn p-t-10">
+          <button class="login100-form-btn col-sm-8" type="submit">Đăng nhập</button>
+        </div>
+        <div class="text-center w-full p-t-25 p-b-230">
+          <a href="<%= sails.getUrlFor('HomeController.register') %>" class="txt1">
+            Đăng ký tài khoản
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<div class="limiter">
+    <div class="container-login100" style="background-image: url('images/img-01.jpg');">
+        <div class="wrap-login101 p-l-55 p-r-55 p-t-65 p-b-54">
+            <form class="login100-form validate-form" action="<%= sails.getUrlFor('HomeController.register') %>" method="POST">
+                <span class="login101-form-title p-b-49">
+                    Đăng ký tài khoản
+                    <% if(notify !== null) { %>
+                    <div class="alert alert-success alert-dismissible" id="notify_1">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <%= notify%>
+                    </div>
+                    <% }%>
+                </span>
+                <div class="wrap-input101 validate-input m-b-23" data-validate="Username is reauired">
+                    <span class="label-input101">Email</span>
+                    <input class="input101" type="email" name="email" placeholder="Nhập Email" required>
+                    <span class="focus-input101" data-symbol="&#9993;"></span>
+                </div>
+                <div class="wrap-input101 validate-input m-b-23" data-validate="Username is reauired">
+                    <span class="label-input101">Tên tài khoản</span>
+                    <input class="input101" type="text" name="account" placeholder="Nhập tên tài khoản" required>
+                    <span class="focus-input101" data-symbol="&#x2616;"></span>
+                </div>
+                <div class="wrap-input101 validate-input m-b-23" data-validate="Username is reauired">
+                    <span class="label-input101">Mật Khẩu</span>
+                    <input class="input101" type="password" name="pwd" placeholder="Nhập mật khẩu" required>
+                    <span class="focus-input101" data-symbol="&#x2612;"></span>
+                </div>
+                <div class="wrap-input101 validate-input" data-validate="Password is required">
+                    <span class="label-input101">Nhập lại mật khẩu</span>
+                    <input class="input101" type="password" name="repwd" placeholder="Nhập lại mật khẩu" autocomplete="false" required>
+                    <span class="focus-input101" data-symbol="&#x2612;"></span>
+                </div>
+                <div class="wrap-input101 validate-input" data-validate="Password is required">
+                    <span class="label-input101">Mã đăng ký</span>
+                    <input class="input101" type="password" name="auth" placeholder="Mã đăng ký" autocomplete="false" required>
+                    <span class="focus-input101" data-symbol="&#x2612;"></span>
+                </div>
+                <div class="container-login100-form-btn  p-t-35">
+                    <div class="wrap-login101-form-btn">
+                        <div class="login101-form-bgbtn"></div>
+                        <button class="login100-form-btn" type="submit">Đăng ký</button>
+                    </div>
+                </div>
+                <div class="text-right p-t-15">
+                    <a href="<%= sails.getUrlFor('HomeController.home') %>">Về trang đăng nhập</a>
+                </div>
+        </div>
+        </form>
+    </div>
+</div>
+</div>
