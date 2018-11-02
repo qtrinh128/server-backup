@@ -43,7 +43,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "postbuild": "cp -v build/static/js/main.*.js dist/main.js && cp -v build/static/css/main.*.css dist/main.css"
+    "postbuild": "cp -v build/static/js/main.*.js ./../../assets/js/dashboard/main.js && cp -v build/static/css/main.*.css ./../../assets/js/dashboard/main.css"
   },
   "devDependencies": {
     "ws": "6.1.0"
