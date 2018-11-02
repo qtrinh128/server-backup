@@ -1,0 +1,345 @@
+
+img{
+	width: 50px;
+	height: 50px;
+}
+
+
+.mt-10{
+	margin-left: 10px;
+}
+
+.avatar{
+	position: absolute;
+	margin-left: 5px;
+    margin-top: 11px;
+	position : absolute;
+}
+
+.mg-hd {
+    margin-top: 200px;
+}
+.item-customer {
+	margin-left: 15px;
+	margin-bottom: 20px;
+	/* border: 2px solid #232629; */
+	height: 100px;
+	width: 278px;
+	position: relative;
+	/* border-radius: 10px; */
+}
+
+
+.noti-title {
+	position: absolute;
+	margin-top: 10px;
+    /* margin-bottom: 1rem; */
+    margin-left: 85px;
+}
+
+.mg-close{
+    margin-right: 5px;
+}
+
+.noti-title p {
+	font-size :17px;
+}
+
+.noti-body {
+	position: absolute;
+	margin-left: 70px;
+	margin-top: 32px;
+}
+
+.noti-body a {
+	font-size :14px;
+}
+
+.mg-top{
+	margin-top: 50px;
+
+}
+
+.noti-time p{
+    font-size: 17px;
+    position: absolute;
+    margin-left: 106px;
+    margin-top: 76px;
+    color: red;
+}
+
+.duoi{
+	display: flex;
+	flex-flow: row wrap;
+	
+}
+
+.pagination123 {
+	display: inline-block;
+
+}
+
+.pagination123 a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+
+.pagination123 a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination123 a:hover:not(.active) {background-color: #ddd;}
+
+.pagination123 a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination123 a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.width-dc {
+	width: 300px;
+}
+.width-dcc {
+	width: 450px;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+.alert-width {
+    width: 306px;
+    text-align: center;
+}
+
+#myInput {
+    border-box: box-sizing;
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+/* hover */
+
+.itemcustom-hover {
+    background-color: #deecef;
+    /* border: 0 solid; */
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    utline: 2px solid;
+    outline-color: rgba(119, 39, 39, 0.5);
+    outline-offset: 1px;
+    text-shadow: none;
+    border-radius: 10px;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  } 
+  
+  .itemcustom-hover:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388; 
+  }
+
+
+.checkItem {
+    margin-top: 78px;
+    margin-left: 236px;
+}
+
+.copytext {
+    margin-left: 3px;
+    width: 13px;
+    height: 9px;
+    margin-top: -36px;
+}
+.btnCopy{
+    border-radius: 10px;
+    background-color: #f7f6f3;
+}
+
+.message_ticker {
+    width: 800px;
+    height:30px;
+    overflow:hidden;
+    float:left;
+    border-right:1px solid #333;
+   -webkit-transition: 0.5s ease-in;  
+  -moz-transition: 0.5s ease-in;  
+  -o-transition: 0.5s ease-in;  
+  transition: 0.5s ease-in; 
+    
+  }
+  
+  .message_ticker:hover {
+   -webkit-transition: 4s ease-in;  
+  -moz-transition: 4s ease-in;  
+  -o-transition: 4s ease-in;  
+  transition: 4s ease-in;  
+    text-indent: -300px;
+  }
+  
+
+
+
+.item-truyenthong {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+/* post new */
+
+.item-post {
+    background-color: lightblue;
+    width: 288px;
+    height: 90px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+.avatar-post {
+    width: 60px;
+    height: 60px;
+    margin-top: 7px;
+    margin-left: 3px;
+}
+
+.div-avatar-post{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.body-post{
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-post{
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    color: darkslategray;
+    padding: 10px 2px 2px 2px;
+    font-size: 14px;
+}
+
+.content-post{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(71, 161, 131);
+    padding: 2px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+
+.action-post{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: crimson;
+    padding: 2px 10px 2px 2px;
+    font-size: 16px;
+
+}
+
+.copylink {
+    width: 5%;
+    height: 100%;
+    padding: 3px;
+}
+.div-trai {
+    width: 15%;
+    height: 100%;
+    padding: 3px;
+}
+
+.action-switch {
+    height: 100%;
+    width: 100%;
+    padding-top: 60px;
+    padding-right: 50px;
+    
+}
+
+
+.ulTT1 {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+
+  .liTT1 {
+    list-style: none;
+    width: calc(100% / 3);
+  }
+
+  .noselect1 {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+   }

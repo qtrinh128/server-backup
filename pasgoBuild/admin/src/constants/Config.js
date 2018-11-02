@@ -1,0 +1,1 @@
+export const URL_API = "https://sv-pg-api.herokuapp.com/api/v1";
