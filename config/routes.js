@@ -36,4 +36,11 @@ module.exports.routes = {
 
   //AUTHENTICATION
   'POST /api/v1/login': 'AccountController.login',
+
+  //CLIENT
+  'POST /api/v1/client/tracking': 'ClientController.postTracking',
+  'GET /api/v1/client/communication': 'ClientController.getAllCommunication',
+  'GET /api/v1/client/setting': 'ClientController.getAllSetting',
+  'GET /api/v1/client/restaurant/dbsetting': 'ClientController.getOneRestaurantSetting',
+
 };
